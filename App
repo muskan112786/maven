@@ -1,0 +1,13 @@
+package com.sdet;
+
+public class App{
+	public int userLogin(java.lang.String in_user,String in_pwd) {
+		java.util.ResourceBundle rb=java.util.ResourceBundle.getBundle("config");
+		String userName=rb.getString("username");
+		String password=rb.getString("password");
+		if(in_user.equals(userName)&&in_pwd.equals(password))
+			return 1;
+		else 
+			return 0;
+	}
+}
